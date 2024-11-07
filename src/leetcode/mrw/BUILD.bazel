@@ -71,3 +71,25 @@ java_test(
         "@maven//:org_assertj_assertj_core",
     ]
 )
+
+java_test(
+    name = "ValidAnagramTest",
+    srcs = [
+        "ValidAnagramTest.java",
+    ],
+    deps = [
+        "@maven//:junit_junit",
+        "@maven//:org_assertj_assertj_core",
+    ]
+)
+
+java_test(
+    name = "GroupAnagramsTest",
+    srcs = [
+        "GroupAnagramsTest.java",
+    ],
+    deps = [
+        "@maven//:junit_junit",
+        "@maven//:org_assertj_assertj_core",
+    ]
+)
