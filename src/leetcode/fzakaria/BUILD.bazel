@@ -54,3 +54,11 @@ java_library(
     ],
     deps = [],
 )
+
+java_library(
+    name = "word_pattern",
+    srcs = [
+        "WordPattern.java",
+    ],
+    deps = [],
+)
