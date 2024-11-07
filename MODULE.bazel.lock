@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 6,
-  "moduleFileHash": "063bafd3e1afba885bcdaf245570b27e6087fa033f83a623e2619a199e22ce82",
+  "moduleFileHash": "c732401a328662175294d7d3df86abf3bc03010bcc534e3f6f17792f2578b525",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -41,7 +41,10 @@
             {
               "tagName": "install",
               "attributeValues": {
-                "artifacts": []
+                "artifacts": [
+                  "junit:junit:4.13.2",
+                  "org.assertj:assertj-core:3.11.1"
+                ]
               },
               "devDependency": false,
               "location": {

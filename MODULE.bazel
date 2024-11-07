@@ -3,6 +3,8 @@ bazel_dep(name = "rules_jvm_external", version = "6.5")
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
     artifacts = [
+        "junit:junit:4.13.2",
+        "org.assertj:assertj-core:3.11.1",
     ],
 )
 use_repo(maven, "maven")
