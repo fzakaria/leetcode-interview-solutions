@@ -46,3 +46,11 @@ java_library(
     ],
     deps = [],
 )
+
+java_library(
+    name = "ransom_note",
+    srcs = [
+        "RansomNote.java",
+    ],
+    deps = [],
+)
