@@ -1,0 +1,40 @@
+java_library(
+    name = "merge_sorted_array",
+    srcs = [
+        "MergeSortedArray.java",
+    ],
+    deps = [
+    ],
+)
+
+java_test(
+    name = "MergeSortedArrayTest",
+    srcs = [
+        "MergeSortedArrayTest.java",
+    ],
+    deps = [
+        ":merge_sorted_array",
+        "@maven//:junit_junit",
+        "@maven//:org_assertj_assertj_core",
+    ],
+)
+java_library(
+    name = "remove_element",
+    srcs = [
+        "RemoveElement.java",
+    ],
+    deps = [
+    ],
+)
+
+java_test(
+    name = "RemoveElementTest",
+    srcs = [
+        "RemoveElementTest.java",
+    ],
+    deps = [
+        ":remove_element",
+        "@maven//:junit_junit",
+        "@maven//:org_assertj_assertj_core",
+    ],
+)

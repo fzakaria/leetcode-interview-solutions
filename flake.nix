@@ -22,6 +22,8 @@
         default = mkShellNoCC {
           packages = [
             bazel_7
+            openjdk21
+            gcc
           ];
         };
       });

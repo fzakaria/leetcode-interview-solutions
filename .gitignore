@@ -1,3 +1,5 @@
 .ijwb
+.idea
 .direnv
 bazel-*
+*.iml
