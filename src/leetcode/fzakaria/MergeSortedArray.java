@@ -1,31 +1,40 @@
 package leetcode.fzakaria;
 
+import java.util.Arrays;
+
 /**
  * @link https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150
  */
 public class MergeSortedArray {
 
+
     public static void merge(int[] lhs, int m , int[] rhs, int n) {
         assert lhs.length == m + n;
         assert rhs.length == n;
 
-        int i = 0;
-        int j = 0;
+        int N = m + n;
+        int[] results = new int[N];
 
-        while (i < m && j < n) {
-            // if lhs is smaller than rhs do nothing
-            if (lhs[i] <= rhs[j]) {
-                i++;
+        int l = 0;
+        int r = 0;
+
+        for (int i = 0; i < N; i++) {
+
+            if (l >= m) {
+                results[i] = rhs[r++];
+            } else if (r >= n) {
+                results[i] = lhs[l++];
             } else {
-                // swap it with the start of the rhs
-                int temp = lhs[i];
-                lhs[i] = rhs[j];
-                rhs[j] = temp;
-                j++;
+                if (lhs[l] < rhs[r]) {
+                    results[i] = lhs[l++];
+                } else {
+                    results[i] = rhs[r++];
+                }
             }
+
         }
 
-        System.arraycopy(rhs, 0, lhs, m, n);
+        System.arraycopy(results, 0, lhs, 0, N);
     }
 
 }
