@@ -1,0 +1,8 @@
+java_library(
+    name = "merge_sorted_array",
+    srcs = [
+        "MergeSortedArray.java",
+    ],
+    deps = [
+    ],
+)

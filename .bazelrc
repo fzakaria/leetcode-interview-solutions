@@ -2,4 +2,4 @@ common --enable_bzlmod
 
 # https://github.com/AloisSeckar/demos-java/blob/master/JavaFeatures.md
 # https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-21/
-build --java_language_version=23
+build --java_language_version=21
