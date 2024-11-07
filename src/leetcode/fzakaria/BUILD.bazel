@@ -38,3 +38,11 @@ java_test(
         "@maven//:org_assertj_assertj_core",
     ],
 )
+
+java_library(
+    name = "majority_element",
+    srcs = [
+        "MajorityElement.java",
+    ],
+    deps = [],
+)
