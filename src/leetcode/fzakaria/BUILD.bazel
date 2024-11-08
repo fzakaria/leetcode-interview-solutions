@@ -62,3 +62,27 @@ java_library(
     ],
     deps = [],
 )
+
+java_library(
+    name = "WordPattern",
+    srcs = [
+        "WordPattern.java",
+    ],
+    deps = [],
+)
+
+java_test(
+    name = "CloneGraphTest",
+    srcs = [
+        "CloneGraphTest.java",
+    ],
+    deps = [],
+)
+
+java_test(
+    name = "ValidateBinarySearchTreeTest",
+    srcs = [
+        "ValidateBinarySearchTreeTest.java",
+    ],
+    deps = [],
+)
